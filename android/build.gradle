@@ -23,6 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 34
+    namespace 'com.imin.vicescreen.imin_vice_screen'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
