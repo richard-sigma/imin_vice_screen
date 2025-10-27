@@ -233,7 +233,13 @@ public class IminViceScreenPlugin implements FlutterPlugin, ActivityAware, Metho
 
     @Override
     public void onReattachedToActivityForConfigChanges(ActivityPluginBinding binding) {
+        if (channel != null) {
+            channel.setMethodCallHandler(null);
+        }
 
+        if (viceScreenChannel != null) {
+            viceScreenChannel.setMethodCallHandler(null);
+        }
     }
 
     @Override
