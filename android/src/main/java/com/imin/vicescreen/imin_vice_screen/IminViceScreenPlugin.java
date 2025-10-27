@@ -69,8 +69,6 @@ public class IminViceScreenPlugin implements FlutterPlugin, ActivityAware, Metho
         channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "imin_vice_screen");
         _context = flutterPluginBinding.getApplicationContext();
         channel.setMethodCallHandler(this);
-
-
     }
 
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
@@ -224,8 +222,8 @@ public class IminViceScreenPlugin implements FlutterPlugin, ActivityAware, Metho
                 }
             }
         });
-        boolean autoShowSubScreenWhenInit = _context.getResources().getBoolean(R.bool.autoShowSubScreenWhenInit);
-        IminViceScreenProvider.getInstance().doInit(binding.getActivity(), false);
+//        boolean autoShowSubScreenWhenInit = _context.getResources().getBoolean(R.bool.autoShowSubScreenWhenInit);
+//        IminViceScreenProvider.getInstance().doInit(binding.getActivity(), false);
     }
 
     @Override
